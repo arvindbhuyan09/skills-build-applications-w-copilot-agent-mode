@@ -28,6 +28,10 @@ DEBUG = True
 # Allow all hosts
 ALLOWED_HOSTS = ['*']
 
+# Add codespace URL to allowed hosts
+CODESPACE_NAME = '[REPLACE-THIS-WITH-YOUR-CODESPACE-NAME]'
+ALLOWED_HOSTS += [f'{CODESPACE_NAME}-8000.app.github.dev']
+
 
 # Application definition
 
